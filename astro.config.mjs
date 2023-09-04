@@ -1,10 +1,11 @@
 import { defineConfig } from "astro/config";
-
 import tailwind from "@astrojs/tailwind";
+
+import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://berndhobbie.github.io",
-  base: "/astro-tailwindcss/",
-  integrations: [tailwind()],
+  base: "/randNumber/",
+  integrations: [tailwind(), svelte()]
 });
